@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleExecutable</key>
+	<string>plugin</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.yelim.FindEscapedGlyphs</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>Find Escaped Glyphs</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.1.0</string> <!-- 1.0 -->
+	<key>CFBundleVersion</key>
+	<string>1</string> <!-- 123 -->
+	<key>UpdateFeedURL</key>
+	<string>None</string>
+	<key>productPageURL</key>
+	<string>None</string>
+	<key>productReleaseNotes</key>
+	<string>Find Escaped Glyphs</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright, yelim, 2023</string>
+	<key>NSPrincipalClass</key>
+	<string>FindEscapedGlyphs</string>
+	<key>PyMainFileNames</key>
+	<array>
+		<string>plugin.py</string>
+	</array>
+</dict>
+</plist>
