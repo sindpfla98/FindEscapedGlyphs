@@ -7,7 +7,7 @@
 	<key>CFBundleExecutable</key>
 	<string>plugin</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.yelim.FindEscapedGlyphs</string>
+	<string>com.sindpfla98.FindEscapedGlyphs</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -17,13 +17,13 @@
 	<key>CFBundleVersion</key>
 	<string>1</string> <!-- 123 -->
 	<key>UpdateFeedURL</key>
-	<string>None</string>
+	<string>https://raw.githubusercontent.com/sindpfla98/FindEscapedGlyphs/master/FindEscapedGlyphs.glyphsPlugin/Contents/Info.plist</string>
 	<key>productPageURL</key>
-	<string>None</string>
+	<string>https://github.com/sindpfla98/FindEscapedGlyphs</string>
 	<key>productReleaseNotes</key>
 	<string>Find Escaped Glyphs</string>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright, yelim, 2023</string>
+	<string>Copyright, sindpfla98, 2023</string>
 	<key>NSPrincipalClass</key>
 	<string>FindEscapedGlyphs</string>
 	<key>PyMainFileNames</key>
