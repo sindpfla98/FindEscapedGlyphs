@@ -1,0 +1,12 @@
+/* Class = "NSWindow"; title = "Find Escaped Glyphs"; ObjectID = "5fb-xh-cZk"; */
+"5fb-xh-cZk.title" = "벗어난 글립 찾기";
+
+/* Class = "NSButtonCell"; title = "Selected Glyphs"; ObjectID = "VQ3-lY-atJ"; */
+"VQ3-lY-atJ.title" = "선택된 글립만";
+
+/* Class = "NSButtonCell"; title = "Cancel"; ObjectID = "WfB-pv-tNK"; */
+"WfB-pv-tNK.title" = "취소";
+
+/* Class = "NSButtonCell"; title = "Apply"; ObjectID = "cWU-WJ-OLz"; */
+"cWU-WJ-OLz.title" = "실행";
+
