@@ -1,5 +1,5 @@
 # FindEscapedGlyphs
-Glyph > 'Find Escaped Glyphs' finds a glyph that component or path is outside the box.
+*Glyph > 'Find Escaped Glyphs'* finds a glyph that component or path is outside the box.
 
 <img width="335" alt="FindEscapedGlyphs_Window" src="https://github.com/sindpfla98/FindEscapedGlyphs/assets/43367995/a04416bc-9350-4e31-bc13-4bf0dacbfb5f">
 
@@ -13,7 +13,7 @@ Glyph > 'Find Escaped Glyphs' finds a glyph that component or path is outside th
 
 https://github.com/sindpfla98/FindEscapedGlyphs/assets/43367995/11dc3315-a17d-4407-879f-0c7cb3ba307b
 
-1. Click Glyph > 'Find Escaped Glyphs' to open the window.
+1. Click *Glyph > 'Find Escaped Glyphs'* to open the window.
 
 2. Write down the x and y coordinates, which are the largest or the smallest among the various glyphs, in MinX, MinY, MaxX, and MaxY.
 
