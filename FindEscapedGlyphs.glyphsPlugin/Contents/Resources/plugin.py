@@ -38,7 +38,7 @@ class FindEscapedGlyphs(GeneralPlugin):
 		self.name = Glyphs.localize({
 			'en': 'Find Escaped Glyphs',
 			'ko': '벗어난 글립 찾기',
-			})
+		})
 		self.loadNib('IBdialog', __file__)
 		return
 
@@ -87,10 +87,10 @@ class FindEscapedGlyphs(GeneralPlugin):
 		result.append('Done')
 		self.result_tf.setString_("\n".join(result))
 
-
 	@objc.IBAction
 	def setCancleButtonClicked_(self, sender):
 		self.window.close()
+
 
 def checkLayer(self, layer, MinX, MinY, MaxX, MaxY):
 	print_result = False
