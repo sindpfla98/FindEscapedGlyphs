@@ -89,13 +89,14 @@ class FindEscapedGlyphs(GeneralPlugin):
 
 def checkLayer(self, layer, MinX, MinY, MaxX, MaxY, result):
 	print_result = False
-	if layer.bounds.origin.x < MinX:
+	bounds = layer.bounds
+	if bounds.origin.x < MinX:
 		print_result = True
-	if layer.bounds.origin.y < MinY:
+	if bounds.origin.y < MinY:
 		print_result = True
-	if layer.bounds.origin.x + layer.bounds.size.width > MaxX:
+	if bounds.origin.x + bounds.size.width > MaxX:
 		print_result = True
-	if layer.bounds.origin.y + layer.bounds.size.height > MaxY:
+	if bounds.origin.y + bounds.size.height > MaxY:
 		print_result = True
 	if print_result:
 		result += ('\n' + layer.parent.name)
