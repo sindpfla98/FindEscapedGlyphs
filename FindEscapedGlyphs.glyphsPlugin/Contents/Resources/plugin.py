@@ -29,7 +29,12 @@ class FindEscapedGlyphs(GeneralPlugin):
 
 	@objc.python_method
 	def settings(self):
-
+		Glyphs.registerDefaults({
+			"FindEscapedGlyphs_min_x": 0,
+			"FindEscapedGlyphs_min_y": 0,
+			"FindEscapedGlyphs_max_x": 1000,
+			"FindEscapedGlyphs_max_y": 1000,
+		})
 		self.name = Glyphs.localize({
 			'en': 'Find Escaped Glyphs',
 			'ko': '벗어난 글립 찾기',
