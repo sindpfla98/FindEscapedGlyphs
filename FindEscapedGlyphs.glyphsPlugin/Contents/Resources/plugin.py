@@ -63,11 +63,10 @@ class FindEscapedGlyphs(GeneralPlugin):
 
 	@objc.IBAction
 	def setApplyButtonClicked_(self, sender):
-		MinX = int(self.MinX_tf.stringValue())
-		MinY = int(self.MinY_tf.stringValue())
-		MaxX = int(self.MaxX_tf.stringValue())
-		MaxY = int(self.MaxY_tf.stringValue())
-		result = 'Glyph Name'
+		MinX = self.MinX_tf.integerValue()
+		MinY = self.MinY_tf.integerValue()
+		MaxX = self.MaxX_tf.integerValue()
+		MaxY = self.MaxY_tf.integerValue()
 		selected = self.selectedGlyphs_ckb.state()
 
 		if selected:
