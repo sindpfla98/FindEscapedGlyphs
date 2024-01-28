@@ -67,29 +67,30 @@ class FindEscapedGlyphs(GeneralPlugin):
 		MinY = self.MinY_tf.integerValue()
 		MaxX = self.MaxX_tf.integerValue()
 		MaxY = self.MaxY_tf.integerValue()
+		result = ['Glyph Name']
 		selected = self.selectedGlyphs_ckb.state()
 
 		if selected:
 			for layer in Glyphs.font.selectedLayers:
-				result = checkLayer(self, layer, MinX, MinY, MaxX, MaxY, result)
-
+				result.extend(checkLayer(self, layer, MinX, MinY, MaxX, MaxY))
 		else:
 			for glyph in Glyphs.font.glyphs:
 				for layer in glyph.layers:
 					if layer.master == Glyphs.font.selectedFontMaster:
-						result = checkLayer(self, layer, MinX, MinY, MaxX, MaxY, result)
-		
-		result += ('\n' + 'Done')
-		self.result_tf.setString_(result)
-				
+						result.extend(checkLayer(self, layer, MinX, MinY, MaxX, MaxY, result))
+
+		result.append('Done')
+		self.result_tf.setString_("\n".join(result))
+
 
 	@objc.IBAction
 	def setCancleButtonClicked_(self, sender):
 		self.window.close()
 
-def checkLayer(self, layer, MinX, MinY, MaxX, MaxY, result):
+def checkLayer(self, layer, MinX, MinY, MaxX, MaxY):
 	print_result = False
 	bounds = layer.bounds
+	result = []
 	if bounds.origin.x < MinX:
 		print_result = True
 	if bounds.origin.y < MinY:
@@ -99,6 +100,6 @@ def checkLayer(self, layer, MinX, MinY, MaxX, MaxY, result):
 	if bounds.origin.y + bounds.size.height > MaxY:
 		print_result = True
 	if print_result:
-		result += ('\n' + layer.parent.name)
-		
+		result.append(layer.parent.name)
+
 	return result
