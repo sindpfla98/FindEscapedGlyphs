@@ -68,6 +68,9 @@
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
+                        <connections>
+                            <binding destination="Vni-PG-NRB" name="value" keyPath="values.FindEscapedGlyphs_min_x" id="HzV-tk-drm"/>
+                        </connections>
                     </textField>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MqS-fC-chE">
                         <rect key="frame" x="21" y="289" width="34" height="16"/>
@@ -87,6 +90,9 @@
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
+                        <connections>
+                            <binding destination="Vni-PG-NRB" name="value" keyPath="values.FindEscapedGlyphs_min_y" id="2aS-A4-xPq"/>
+                        </connections>
                     </textField>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="364-9b-xf8">
                         <rect key="frame" x="21" y="263" width="38" height="16"/>
@@ -106,6 +112,9 @@
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
+                        <connections>
+                            <binding destination="Vni-PG-NRB" name="value" keyPath="values.FindEscapedGlyphs_max_x" id="07V-OB-uIk"/>
+                        </connections>
                     </textField>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zFy-gh-cJx">
                         <rect key="frame" x="21" y="237" width="38" height="16"/>
@@ -125,6 +134,9 @@
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
+                        <connections>
+                            <binding destination="Vni-PG-NRB" name="value" keyPath="values.FindEscapedGlyphs_max_y" id="C8C-kP-yHK"/>
+                        </connections>
                     </textField>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vs4-dH-HTh">
                         <rect key="frame" x="21" y="185" width="125" height="18"/>
@@ -133,6 +145,9 @@
                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
+                        <connections>
+                            <binding destination="Vni-PG-NRB" name="value" keyPath="values.FindEscapedGlyphs_selected_glyphs" id="09y-IO-c0s"/>
+                        </connections>
                     </button>
                     <scrollView fixedFrame="YES" borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qhi-bY-su1">
                         <rect key="frame" x="9" y="41" width="316" height="135"/>
