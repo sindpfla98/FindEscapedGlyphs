@@ -82,7 +82,7 @@ class FindEscapedGlyphs(GeneralPlugin):
 			for glyph in Glyphs.font.glyphs:
 				for layer in glyph.layers:
 					if layer.master == Glyphs.font.selectedFontMaster:
-						result.extend(checkLayer(self, layer, MinX, MinY, MaxX, MaxY, result))
+						result.extend(checkLayer(self, layer, MinX, MinY, MaxX, MaxY))
 
 		result.append('Done')
 		self.result_tf.setString_("\n".join(result))
