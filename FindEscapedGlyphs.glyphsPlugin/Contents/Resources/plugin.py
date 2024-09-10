@@ -46,7 +46,10 @@ class FindEscapedGlyphs(GeneralPlugin):
 	def start(self):
 		try:
 			try:
-				newMenuItem = NSMenuItem(self.name, self.showWindow_)
+				if Glyphs.versionNumber >= 3.3:
+					newMenuItem = NSMenuItem(self.name, callback=self.showWindow_, target=self)
+				else:
+					newMenuItem = NSMenuItem(self.name, self.showWindow_)
 				Glyphs.menu[GLYPH_MENU].append(newMenuItem)
 			except:
 				mainMenu = Glyphs.mainMenu()
